@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://127.0.0.1:3000/all%20html%20files/contact.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./js_ pro_files/___vscode_livepreview_injected_script"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./js_ pro_files/bootstrap.min.css" rel="stylesheet">
+    <script src="./js_ pro_files/bootstrap.bundle.min.js.download"></script>
+      <link rel="stylesheet" href="./js_ pro_files/w3.css">
+      <link rel="stylesheet" href="./js_ pro_files/style.css">  
+    <title>js: Accordion</title>
+</head>
+<body style="background-color: teal;">
+  <!-- <script src="./01.js"></script> -->
+  <!-- <script src="script.js"></script> -->
+<!-- <script>
+  var accordion = document.querySelector('.accordion-item');
+
+accordion.forEach(item => {
+    const title = item.querySelector('.accordion-title');
+    const content = item.querySelector('.accordion-content');
+
+    title.addEventListener('click',() => {
+      item.classlist.toggle('active');
+      
+ });
+}); -->
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="./js_ pro_files/jquery-3.2.1.min.js.download"></script>
+  <script src="./js_ pro_files/popper.min.js.download"></script>
+  <script src="./js_ pro_files/bootstrap.min.js.download"></script>
+<h1>Y : Form Events</h1>
+<form action="http://127.0.0.1:3000/all%20html%20files/contact.html?" id="sform">
+  <lable for="">Name</lable><input type="email" id="sname"><br><br>
+
+  <lable for="">Class</lable><input type="text" id="sclass"><br><br>
+  <label for="">Country</label>
+<select id="scountry">
+  <option value="India">India</option>
+  <option value="India">China</option>
+  <option value="India">Pakistan</option>
+  <option value="India">Bangladesh</option>
+  <option value="India">Sri Lanka</option>
+  <option value="India">Nepal</option>
+</select>
+<input type="submit" id="sub">
+</form>
+<br>
+<div id="test-1"></div>
+<br>
+<div id="box" class="test">
+  <h2>Text Box1</h2>
+  <p>Hello :jquery Mouse EventsLorem ipsum dolor sixpedita?</p>
+</div>
+<div id="box1" class="test">
+  <h2>Text Box1</h2>
+  <p>Hello :jquery Mouse EventsLorem ipsum dolor sixpedita?</p>
+</div>
+
+<ul id="list">
+  <li>Orange</li>
+  <li class="test">Grapes</li>
+  <li>Banana</li>
+  <li class="test">Guava</li>
+  <li>Apple</li>
+</ul>
+
+<script>
+//   $(document).ready(function() {
+//    var a = $('#test1').html();
+// console.log(a);
+
+// console.log("Hello phone ...");
+// });
+// $(document).ready(function(){
+  // $("ul li:lt()").css("border", "1px solid green");
+// });
+
+// keypress,keyup,keydown
+$(document).ready(function(){
+$('body').keypress(function(){
+$(this).css('background-color','orange');
+})
+$('body').keyup(function(){
+$(this).css('background-color','teal');
+})
+$('body').keydown(function(){
+$(this).css('background-color','gray');
+})
+
+})
+
+
+
+$(document).ready(function(){
+  $('#box').click(function(){
+$('#box').css('background-color','red');
+  
+});
+$('.test').click(function(){
+$('test').css('background-color','orange');
+
+});
+
+$('#box').dblclick(function(){
+$('#box').css('background-color','green');
+
+});
+$('#box').contextmenu(function(){
+$('#box').css('background-color','purple');
+
+});
+
+$('#box').mouseenter(function(){
+$('#box').css('background-color','blue');
+
+});
+$('#box').mouseleave(function(){
+$('#box').css('background-color','yellow');
+
+});
+
+});
+
+</script>
+<!-- <script src="./01.js"></script> -->
+<script src="./js_ pro_files/script.js.download"></script>
+
+</body></html>
