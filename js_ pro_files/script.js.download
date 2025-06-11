@@ -1,0 +1,21 @@
+$(document).ready(function(){
+    $('#sname,#sclass,#scountry').focus(function(){
+        $(this).css('background-color','red');
+    });
+    $('#sname,#sclass,#scountry').blur(function(){
+        $(this).css('background-color','');
+    });
+    $('#scountry').change(function(){
+        // $(this).css('background-color','yellow');
+        var a = $(this).val();
+        $('#test-1').html(a);
+    });
+    $('#sname,#sclass').select(function(){
+        $(this).css('background-color','blue') ;
+    });
+    $('#sform').submit(function(){
+        alert("Form Submitted");
+        // $(this).css('background-color','blue') ;
+    });
+
+});

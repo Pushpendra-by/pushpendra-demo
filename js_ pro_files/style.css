@@ -1,0 +1,88 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* form Events focus() blur() change, select submit */
+#box{
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 8rem;
+    background: #e0afaf;
+    width: 22rem;
+}
+#box1{
+    border: 1px solid #000;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 8rem;
+    background: #e0afaf;
+    width: 22rem;
+}
+form input{
+    font-size: 1.2rem;
+    color: rgb(48, 138, 217);
+    font-weight: 500;
+}
+#sub{
+    background: #09b26e;
+    color: aliceblue;
+}
+#test-1{
+    border: 1px solid red;
+    margin-top: 5px;
+    
+}
+/*
+#test1{
+    border: 1px solid #000;
+    width: 15rem;
+    height: 13rem;
+    padding: 10px;
+    position: relative;
+    top: 0rem;
+    left: 2rem;
+    margin: 10px;
+    background: #dc8b8b;
+}
+
+#test2{
+    border: 1px solid #000;
+    width: 15rem;
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+  
+    margin: 10px;
+    padding: 10px;
+    height: 13rem;
+    background: #d6d206;
+}
+
+
+ .accordion{
+    font-family: arial;
+    width: 28rem;
+    border: 1px solid #000;
+}
+.accordion-title{
+    color: #fff;
+    background: #e65050;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 1s;
+}
+.accordion-title:hover{
+    background: #40bd63;
+}
+.accordion-content{
+    background: #b9c6ef;
+    padding: 10px;
+    display: none;
+}
+.accordion-item.active .accordion-content{
+    display: block;
+} */
