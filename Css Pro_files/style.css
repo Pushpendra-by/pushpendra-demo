@@ -1,0 +1,207 @@
+
+* {box-sizing: border-box;}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0%;
+}
+.mySlides{
+  display: none;
+}
+img{
+  vertical-align: middle;
+}  
+
+/* ###############################    slide images  ########################### */
+.slideshow-container{
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius:0 3px 3px 0;
+  user-select: none;
+}
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.text{
+  color: #f7f1f1;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0%;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6 ease;
+
+}
+ /* ###############  Services   #################### */
+ video{
+  border-radius: 20px;
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+  height: 15rem;
+}
+.mp-3 video{
+  border-radius: 20px;
+  width: 100%;
+  height: 15rem;
+}
+
+audio{
+  display: inline;
+  margin-top: 10px;
+  width: 100%;
+}
+
+        /* 33333333333  footer setion   3333333333333 */
+       /* #foot{
+        margin-bottom: 2em;
+       } */
+section{
+  margin-top: 3em;
+}
+.active, .dot:hover{
+  background-color: #717171;
+}
+.fade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* ##################  about section ############### */
+body{
+  max-width: 600px;
+}
+
+    /* ################## navbar         ################### */
+     ul  li{
+    display: inline-flex;
+    /* width: 100%; */
+}
+
+.navbar{
+  width: 100%;
+  /* display: inline; */
+  background: #000;
+}
+.logo{
+  float: right;
+  margin-right: 2em;
+}
+ .active .same{
+  background: #3b3838;
+}
+.w3-sofia{
+     font-family: 'Sofia',serif;
+  }
+
+.w3-tangerine{
+  font-family: "Tangerine",serif;
+}
+
+li a{
+  /* display: flex; */
+    color: #ffffff;
+  list-style: none;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 18px;
+  font-size: 1.2em;
+  /* justify-content: space-around; */
+  /* align-items: first baseline; */
+}
+
+li h1.same{
+  float: left;
+}
+li a:hover{
+  background: #201f1f;
+}
+
+/* ###################  accordion   ############################## */
+.page {
+    display: none; /* Hide all pages initially */
+    padding: 20px;
+}
+
+/* accordion */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #403e3e; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* #####################  forms   ########################### */
+#right{
+  /* float: right; */
+  padding: 10px;
+  margin-right: 1em;
+}
+#formBtn.w3-btn{
+  display: inline;
+} 
+/* ########################    Responsive ##################################### */
+@media only screen and (max-width:300px){
+  .prev, .next, .text {
+    font-size: 11px;
+  }
+  audio {
+    display: block;
+    background: #000;
+    margin-top: 10px;
+    width: 100%;
+  }
+  #formBtn button{
+    display: block;
+  }
+  /* ul li{
+    display: block;
+  } 
+ */
+}

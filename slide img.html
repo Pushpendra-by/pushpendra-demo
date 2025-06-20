@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:3000/demo.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./slide img_files/___vscode_livepreview_injected_script"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./slide img_files/style.css">
+    <link rel="stylesheet" href="./slide img_files/w3.css">
+    <link rel="stylesheet" href="./slide img_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./slide img_files/font-awesome.min.css">
+    <script src="./slide img_files/jquery.min.js.download"></script>
+    <!-- <script src="..\assets\js\script.js"></script> -->
+    <script src="./slide img_files/bootstrap.bundle.min.js.download"></script>
+    <title>demo</title>
+</head>
+<body>
+    <!-- <script src="..\assets\js\script.js"></script> -->
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="display: none;">
+            <div class="numbertext">1 / 3</div>
+            <img src="./slide img_files/artistic girl.png" style="width: 100%;">
+            <div class="text">Caption text</div>
+        </div>
+        <div class="mySlides fade" style="display: none;">
+            <div class="numbertext">2 / 3</div>
+            <img src="./slide img_files/YP2_8857.jpg" style="width: 100%;">
+            <div class="text">Caption Two</div>
+        </div>
+        <div class="mySlides fade" style="display: block;">
+            <div class="numbertext">3 / 3</div>
+            <img src="./slide img_files/DayPass.jpg" style="width: 100%;">
+            <div class="text">Caption Three</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)"> &lt; </a>
+        <a class="next" onclick="plusSlides(1)"> &gt; </a>
+    </div>
+<br>
+<div style="text-align:center">
+    <span class="dot active " onclick="currentSlide(1)"></span>
+    <span class="dot active  active " onclick="currentSlide(2)"></span>
+    <span class="dot active  active " onclick="currentSlide(3)"></span>
+</div>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlide(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n){
+  showSlides(slideIndex = n);
+}
+function showSlides(n){
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideindex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++){
+    slides[i].style.display = 'none';
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className.replace(" active ", "");
+  } 
+  slides[slideIndex-1].style.display = 'block';
+  dots[slideIndex-1].className += " active ";
+
+}
+</script>
+
+<div id="phedra-x-shadow-host" style="position: fixed; top: 0px; left: 0px; width: 0px; height: 0px; pointer-events: none; z-index: 2147483647;"><template shadowrootmode="closed"><iframe id="phedra-x-popup" allow="clipboard-write;" data-state="closed" src="chrome-extension://jckigdhmponckmebbhbfenjmofkklnif/index.html" style="position: fixed; top: 12px; right: 12px; width: 450px; height: 672px; border: none; transform: translateX(calc(100% + 20px)); z-index: 2147483647; transition: transform 0.3s; overflow: hidden; pointer-events: auto;"></iframe></template></div></body></html>

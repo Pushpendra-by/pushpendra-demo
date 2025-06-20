@@ -1,0 +1,504 @@
+
+<!-- saved from url=(0023)http://127.0.0.1:5500/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</head><body>
+
+--&gt;
+
+
+
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Responsive website (long)_files/w3.css">
+    <link rel="stylesheet" href="./Responsive website (long)_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Responsive website (long)_files/font-awesome.min.css">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="./Responsive website (long)_files/styles.css">
+
+<style>
+.page {
+    display: none; /* Hide all pages initially */
+    padding: 20px;
+}
+
+#home {
+    display: block; /* Show Home page by default */
+}
+
+        .container {
+  /* background: #eee; */
+  /* border: 2px solid gray; */
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  justify-content: center;
+  margin-left: 30em;
+  /* float: ; */
+}
+.text{
+  font-size: 10px;
+}
+
+</style>
+
+
+
+    <nav class="w3-navbar w3-card w3-padding">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/#" class="active" onclick="showPage(&#39;home&#39;)">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/#" onclick="showPage(&#39;accordions&#39;)">Accordions</a></li>
+            <li><a href="http://127.0.0.1:5500/#" onclick="showPage(&#39;about&#39;)">About</a></li>
+            <li><a href="http://127.0.0.1:5500/#" onclick="showPage(&#39;contact&#39;)">Contact us!</a></li>
+        </ul>
+    </nav>
+
+
+      <section id="home" class="page">
+    <div class="container" id="viewbox">
+  <svg viewBox="0 0 100 100">
+    <defs>
+    <path id="shape" d="M10,50 A50,40 20 0,1 90,50" fill="blue" stroke="teal"></path>
+    </defs>
+    <text>
+      <textpath xlink:href="#shape">Home Page!</textpath>
+    </text>
+  </svg>
+
+</div>
+
+    <h1 class="w3-center w3-text-red">Explore of This Website!</h1>
+      <div class="w3-card-4 w3-margin w3-padding" style="width: 99.99%;">
+        <div class="w3-display-container w3-text-white">
+            <img class="" src="./Responsive website (long)_files/img_london.jpg" style="width: 100%;">
+            <div class="w3-xlarge w3-display-bottomleft w3-padding">LONDON 60° F</div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-third w3-center">
+                <h2>MON</h2>
+                <img class="" src="./Responsive website (long)_files/img_weather_sun.jpg" style="width: 30%;">
+            </div>
+            <div class="w3-third w3-center">
+                <h2>TUE</h2>
+                <img class="" src="./Responsive website (long)_files/img_weather_cloud.jpg" style="width: 30%;">
+            </div>
+            <div class="w3-third w3-center w3-margin-bottom">
+                <h2> WED</h2>
+                <img class="" src="./Responsive website (long)_files/img_weather_clouds.jpg" style="width: 30%;">
+            </div>
+        </div>  
+      </div>
+</section>
+
+    
+    <!-- <section id="contact" class="page"> -->
+      <section id="accordions" class="page">
+    <p class="w3-center">" Click on the <mark>Butttons!</mark>  to show <mark>Content!</mark> of this website! "</p>
+    <section class="Accordions w3-panel w3-center">
+<button class="accordion w3-red w3-round-xxlarge w3-center">Section 1</button>
+<div class="panel"><br>
+    <p class="text">Kalpalna shingh</p>
+
+    <img class="w3-card-4 w3-hover-grayscale" src="./Responsive website (long)_files/OIP (4).jpeg">
+     <br>
+    <p class="text">Please Fillup Forms</p>
+    <form action="https://action.php/" class="w3-card-4 w3-hover-animate">
+    <input type="text" id="fname" name="fname" placeholder="First Name:" class="w3-animate-input"><br>
+    <input type="password" id="pwd" name="Password" placeholder="Password:" class="w3-animate-input"><br>
+   <h2>Choose Your Favorite Programming Language:</h2>
+        <lable>
+            <input class="w3-radio" type="radio" name="language" value="html"> HTML
+        </lable><br>
+        <lable>
+            <input type="radio" class="w3-radio" name="language" value="css"> CSS
+        </lable><br>
+        <lable>
+            <input type="radio" class="w3-radio" name="language" value="javascript"> Javascript
+        <br>
+        <lable>
+            <input type="radio" class="w3-radio" name="language" value="C++"> C++
+        </lable><br>
+
+    <p class="text">Showcase skills as a fronted developer</p><br>
+   <lable for="range"> HTML5
+     <input type="range" class="w3-range" id="range" name="range" placeholder="90%">
+     <div class="w3-round-xlarge">
+        <div class="w3-container w3-green w3-round-xlarge w3-center w3-hover-blue" style="width: 85%;">HTML5 / 85%</div>
+        <br>
+     </div>
+   </lable><br>
+   <lable for="range"> CSS3
+     <input type="range" id="range" name="range" placeholder="">
+<div class="w3-round-xlarge">
+    <div class="w3-container w3-green w3-round-xlarge w3-center w3-hover-blue" style="width: 65%;"> CSS3 / 65%</div>
+</div>
+   </lable><br>
+   <lable for="range"> Bootstrap5
+     <input type="range" id="range" name="range" placeholder="">
+     <div class="w3-round-xlarge">
+        <div class="w3-container w3-round-xlarge w3-green w3-center w3-hover-blue" style="width: 90%;"> Bootstrap5 / 90%</div>
+     </div>
+   </lable><br>
+   <lable for="range"> w3.css
+     <input type="range" id="range" name="range" placeholder="">
+     <div class="w3-round-xlarge">
+        <div class="w3-container w3-green w3-center w3-hover-blue w3-round-xlarge" style="width: 93.5%;"> W3.css / 93.5%</div>
+     </div>
+   </lable><br>
+   <lable for="range"> Javascript
+     <input type="range" id="range" name="range" placeholder="">
+     <div class="w3-round-xlarg">
+        <div class="w3-container w3-green w3-hover-blue w3-round-xlarge" style="width: 25.5%;"> Javascript / 25.5%</div>
+     </div>
+   </lable><br>
+   <lable for="range"> J.query / Recat.js
+     <input type="range" id="range" name="range" placeholder="">
+     <div class="w3-round-xlarge">
+<div class="w3-container w3-green w3-hover-blue w3-round-xlarge" style="width: 18.5%;"> j.query / Recat.js / 10.5%</div>
+     </div>
+   </lable><br>
+   <lable for="range"> GitHub
+     <input type="range" id="range" name="range" placeholder="">
+     <div class="w3-round-xlarge">
+        <div class="w3-container w3-green w3-hover-blue w3-round-xlarge" style="width: 35.5%;"> GitHub / 35.5%</div>
+
+     </div>
+   </lable><br>
+   <button class="w3-round-xlarge w3-cad-4 w3-padding-large w3-btn w3-blue w3-text-light w3-hover-green w3-container" type="button" id="submit" placeholder="Submit!">Submit!</button>
+   <button class="w3-round-xlarge  w3-card-4 w3-padding-large w3-btn w3-red w3-text-light w3-hover-blue w3-container" id="reset" placeholder="Reset!">Reset!</button>
+ 
+    <p>Lorem ipsum dolor sit amet..</p>
+</lable></form></div>
+<button class="accordion w3-round-xxlarge w3-border w3-center">Section 2</button>
+<div class="panel">
+  <p class="text">Play Audio &amp; Video Song! </p>
+    
+    <h3 class="content">Listen's  Audio &amp; Video song !</h3>
+<audio controls="" loop="" autoplay="">
+  <source src="\assets\audios\jungle-waves-drumampbass-electronic-inspiring-promo-345013.mp3">
+</audio>
+<br>
+<!-- <video controls>
+  <source src="\assets\videos\WIN_20250527_10_58_34_Pro.mp4">
+</video> -->
+    <audio controls="" loop="" autopaly="" muted="">
+        <source src="\assets\audios\bollywood-song-313044 (1).mp3">
+    </audio><br>
+    <video controls="" loop="" autoplay="">
+        <source class="w3-card-4 w3-hover-grayscale" src="\assets\videos\niudSAAAAAA.mp4">
+        </video>
+    <p class="text">Text</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id voluptatem eaque, rem tempora iste nisi fugit inventore at, veniam a, reiciendis minima optio similique fuga consequatur vel officia! Accusamus rem recusandae quis reprehenderit ea cupiditate maxime cumque ipsa perspiciatis ipsum doloremque hic, quasi saepe illo aut modi omnis quisquam. Pariatur maiores incidunt, similique facilis doloremque iure commodi maxime vero dolores assumenda eaque voluptate omnis veritatis ipsum in asperiores, aliquam earum adipisci quisquam, repudiandae tempore blanditiis! Amet maiores ullam repudiandae perferendis quas provident ut dolore distinctio, suscipit odio? Nam quisquam voluptatibus delectus dignissimos consequatur magnam? Sequi, quidem porro aspernatur et aliquid laudantium reprehenderit modi. Corporis hic quidem debitis, maiores perferendis eaque animi?</p>
+    <p>Lorem, ipsum dolor...</p>
+</div>
+<button class="accordion w3-dark-gray w3-center w3-round-xxlarge w3-section w3-margin-xxlarge">Section 3</button>
+<div class="panel">
+    <h1 class="content">Today Weather</h1>
+<h1 class="w3-center">Tempture in F</h1>
+      <div class="w3-card-4 w3-margin w3-padding" style="width: 99.99%;">
+        <div class="w3-display-container w3-text-white">
+            <img class="" src="./Responsive website (long)_files/Nature-Wallpaper.jpg" style="width: 100%;">
+            <div class="w3-xlarge w3-display-bottomleft w3-padding"> KASHMIRE VELLY 60° F</div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-third w3-center">
+                <h2>MON </h2>
+                <img class="" src="./Responsive website (long)_files/img_weather_sun.jpg" style="width: 30%;">
+                <div class="w3-xlarge w3-display-bottom w3-padding"> 42° C</div>
+            </div>
+            <div class="w3-third w3-center">
+                <h2>TUE</h2>
+                 <img class="" src="./Responsive website (long)_files/img_weather_cloud.jpg" style="width: 30%;">
+                 <div class="w3-xlarge w3-display-bottom w3-padding"> 30° C</div>
+                
+            </div>
+            <div class="w3-third w3-center w3-margin-bottom">
+                <h2> WED</h2>
+                <img class="" src="./Responsive website (long)_files/img_weather_clouds.jpg" style="width: 30%;">
+                <div class="w3-xlarge w3-display-bottom w3-padding"> -3° C</div>
+            </div>
+        </div>  
+      </div>
+<br>
+
+
+<h1 class="w3-center w3-text-white w3-red w3-round-xlarge">Blogs</h1>
+      <div class="w3-card-4 w3-margin w3-padding" style="width: 99.99%;">
+        <div class="w3-display-container w3-text-white">
+            <img class="" src="./Responsive website (long)_files/img_london.jpg" style="width: 100%;">
+            <div class="w3-xlarge w3-display-bottomleft w3-padding">LONDON 60° F</div>
+        </div>
+    
+       <div class="w3-row">
+            <div class="w3-third w3-center">
+                <h2 class="w3-teal w3-center w3-hover-blue w3-text-white w3-round-xlarge">Explore's city</h2>
+           <img class="" src="./Responsive website (long)_files/img_london.jpg" style="width: 90%;height: 95px;">
+           <p class="w3-teal w3-center w3-hover-red w3-text-white w3-round-xlarge">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+           
+            </div>
+             <div class="w3-third w3-center w3-margin-bottom">
+                <h2 class="w3-yellow w3-center w3-hover-green w3-text-white w3-round-xlarge w3-margin"> Explore Nature</h2>
+                <img class="" src="./Responsive website (long)_files/111509-landscape-nature.jpg" style="width: 90%;height: 95px;">
+                <p class="w3-black w3-text-white w3-center w3-hover-pink w3-round-xlarge">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="w3-third w3-center">
+                <h2 class="w3-purple w3-text-white w3-center w3-hover-teal w3-round-xlarge w3-margin">Travels</h2>
+               <img src="./Responsive website (long)_files/two girls walking.png" style="width: 90%; height: 95px;">
+               <p class="w3-light-blue w3-text-white w3-center w3-hover-red w3-round-xlarge">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+           
+            </div>
+        </div>
+        </div>
+</div></section>
+
+    </section>
+    <section id="about" class="page">
+    <h1 class="w3-center w3-text-white w3-red w3-round-xlarge">[ City of Landan ]</h1>
+      <div class="w3-card-4 w3-margin w3-padding" style="width: 99.99%;">
+        <div class="w3-display-container w3-text-white">
+            <img class="w3-margin-bottom" src="./Responsive website (long)_files/img_london.jpg" style="width: 100%;">
+            <div class="w3-xlarge w3-display-topleft w3-padding w3-text-gray">Explore City of Landon</div>
+            <div class="w3-xlarge w3-display-left w3-padding" id="degree">LONDON 60° F</div>
+            <div class="w3-xlarge w3-display-topright w3-padding w3-text-gray">Humidity 70%</div>
+            <div class="w3-xlarge w3-display-right w3-padding">AQI 55: Satisfactory</div>
+        </div>
+    
+       <div class="w3-row">
+            <div class="w3-third w3-center">
+                <h2 class="w3-teal w3-center w3-hover-blue w3-text-white w3-round-xlarge">Explore's city</h2>
+           <img class="" src="./Responsive website (long)_files/img_london.jpg" style="width: 90%;height: 95px;">
+           <p class="w3-teal w3-center w3-hover-red w3-text-white w3-round-xlarge">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+           
+            </div>
+             <div class="w3-third w3-center w3-margin-bottom">
+                <h2 class="w3-yellow w3-center w3-hover-green w3-text-white w3-round-xlarge w3-margin"> Explore Nature</h2>
+                <img class="" src="./Responsive website (long)_files/111509-landscape-nature.jpg" style="width: 90%;height: 95px;">
+                <p class="w3-black w3-text-white w3-center w3-hover-pink w3-round-xlarge">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="w3-third w3-center">
+                <h2 class="w3-purple w3-text-white w3-center w3-hover-teal w3-round-xlarge w3-margin">Travels</h2>
+               <img src="./Responsive website (long)_files/two girls walking.png" style="width: 90%; height: 95px;">
+               <p class="w3-light-blue w3-text-white w3-center w3-hover-red w3-round-xlarge">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+           
+            </div>
+        </div>
+        </div>
+    </section>
+
+ <section id="contact" class="page">
+<h2 class="w3-center w3-card w3-teal w3-text-white w3-hover-red">Contact Page!</h2>
+ 
+<h4 class="w3-center w3-card w3-captalise  w3-text-teal w3-hover-gray">To close the alerts, click on the x  in the upper right cornner:</h4>
+<div class="w3-panel w3-yellow  w3-display-container">
+  <span onclick="this.parentElement.style.display=&#39;none&#39;" class="w3-button w3-large w3-display-topright">×</span>
+  <h1 class="w3-center w3-text-green w3-padding">Friend Request!</h1>
+   <img src="./Responsive website (long)_files/img_avatar3.png" class="w3-round" id="atr-p" style="width: 15rem; height: 10rem;">
+   <button class="w3-btn w3-round-xlarge w3-hover-blue w3-green">Accept!</button>
+   <button class=" w3-btn w3-round-xlarge w3-hover-green w3-red w3-center w3-padding w3-margin">Decline!</button>
+    <h3 class="w3-center w3-animate-top w3-text-white w3-blue" id="Doe">Johan Doe!</h3>
+</div>
+
+
+<div class="w3-panel w3-red w3-display-container">
+  <span onclick="this.parentElement.style.display=&#39;none&#39;" class="w3-button w3-large w3-display-topright">×</span> 
+  <h3 class="w3-center"> Forms !</h3>
+  <form action="http://127.0.0.1:5500/action_page.php" class="w3-container w3-card-4 w3-light-gray w3-text-green w3-margin">
+    <h2 class="w3-center">Contact Us! </h2>
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width: 70px;">
+    <i class="w3-xxlarge fa fa-user"></i>
+  </div>
+  <div class="w3-reset">
+    <input class="w3-input w3-border" name="first" type="text" placeholder="First Name:">
+  </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width: 70px;">
+    <i class="w3-xxlarge fa fa-user w3-left"></i>
+  </div>
+  <div class="w3-reset">
+    <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name:">
+  </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width: 70px;">
+    <i class="w3-xxlarge  fa fa-envelope-o"></i>
+  </div>
+  <div class="w3-reset">
+    <input class="w3-input w3-border" name="email" type="email" placeholder="@Email:">
+  </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width: 70px;">
+    <i class="w3-xxlarge fa fa-search"></i>
+  </div>
+  <div class="w3-reset">
+    <input class="w3-input w3-border" name="password" type="password" placeholder="Password:">
+  </div>
+</div>
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width: 70px;">
+    <i class="w3-xxlarge fa fa-phone"></i>
+  </div>
+  <div class="w3-reset">
+    <input class="w3-input w3-border" name="phone" type="number" placeholder="Phone:">
+  </div>
+</div>
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width: 70px;">
+    <i class="w3-xxlarge fa fa-pencil"></i>
+  </div>
+
+  <div class="w3-reset">
+    <input class="w3-input w3-border" name="massage" type="text" placeholder="Massage:">
+  </div>
+</div>
+<button class="w3-button w3-block w3-section w3-blue w3-ripple w3-padding">Send</button>
+
+
+
+  </form>
+</div>
+<div class="w3-panel w3-green  w3-display-container">
+  <span onclick="this.parentElement.style.display=&#39;none&#39;" class="w3-button w3-large w3-display-topright">×</span>
+  <h2 class="w3-center w3-padding w3-card">Skills in %</h2>
+   <ol class="w3-ol">
+    <li>HTML5 = 80%</li>
+    <li>CSS = 60%</li>
+    <li>Javascript = 15%</li>
+    <li>Bootstrap5 = 70%</li>
+   </ol>
+</div>
+
+<!-- <div class="w3-panel w3-yellow  w3-display-container">
+  <span onclick="this.parentElement.style.display='none'" class="w3-button w3-large w3-display-topright">&times;</span>
+  <h3 class="w3-center w3-text-green w3-padding">Friend Request!</h3>
+   <img src=".\assets\images\img_avatar3.png" class="w3-round" id="atr-p" style="width: 15rem; height: 10rem;">
+   <button class="w3-btn w3-round-xlarge w3-hover-blue w3-green">Accept!</button>
+   <button class=" w3-btn w3-round-xlarge w3-hover-red w3-red w3-center w3-padding w3-margin">Decline!</button>
+    <h3 class="w3-bottomleft w3-text-white w3-blue w3-center"><marquee>Johan Doe!</marquee></h3>
+</div> -->
+
+</section>
+  
+<br> 
+        <section id="foot" class="w3-footer w3-text-white w3-padding w3-animate-top w3-card-4">
+ <footer>
+  <h1 class="w3-center">Footer Section!</h1>
+  
+    <h3 class="w3-center w3-gray w3-text-white"> <marquee>Shows Social Media Icon's!</marquee></h3>
+
+     <p class="w3-center w3-padding">Under The Footer Section Have a Multiple Social Media Link As Soon As You Click The Icon Or Text, Just Now Open The New Page!   You Can Visits Social Media Website  </p><br>
+  <!-- <div class="container w3-row"> -->
+    <!-- <input class="w3-input" type="search" name="search" id="search" placeholder="Search:"> -->
+<ul>
+<a href="https://www.google.com/" target="_blank" rel="google.com"><i class="w3-xxlarge fa fa-search w3-text-red w3-padding">Google
+   <input class="w3-input" type="search" name="search" id="search" placeholder="Search:"> </i></a>
+</ul>
+  <ol class="left-f">
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><br><i class="w3-xxlarge fa fa-facebook w3-text-indigo w3-padding-right">Facebook!</i></a><br>
+    <a href="https://www.wikipedia.com/" target="_blank" rel="wikipedia"><i class="w3-xxlarge fa fa-globe w3-text-green w3-padding">wikipedia!</i></a><br>
+    <a href="https://www.google.com/" target="_blank" rel="youtube.com"><i class="w3-xxlarge fa fa-youtube w3-text-red w3-padding">Youtube!</i></a>
+</ol>
+
+  <ul class="right-f">
+    <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer"><br><i class="w3-xxlarge fa fa-phone w3-text-blue w3-padding">Contact'us!</i></a><br>
+    <a href="https://www.wikipedia.com/" target="_blank" rel="wikipedia"><i class="w3-xxlarge fa fa-trash w3-text-green w3-padding">Envelope.com! </i></a><br>
+    <a href="https://www.google.com/" target="_blank" rel="youtube.com"><i class="w3-xxlarge fa fa-envelope-o w3-text-red w3-padding">Email.com! </i></a>
+</ul>
+
+    </footer>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> -->
+<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vero consectetur!</p> -->
+
+</section>
+
+
+
+ <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+//   $(pages).ready(function(){
+//     $("pageId").click(function(){
+//         $("pageId").toggleClass("show");
+//     });
+// });
+
+  function showPage(pageId) {
+    // Hide all pages
+    let pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.style.display = "none");
+
+    // Show the selected page
+    document.getElementById(pageId).style.display = 'block';
+}
+
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++){
+    acc[i].addEventListener("click",function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block"){
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+ function myFunction(x){
+        x.classList.toggle("change");
+    }
+ 
+</script>
+ <!-- Code injected b--></body></html>

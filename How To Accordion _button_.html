@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://127.0.0.1:3000/all%20html%20files/my.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./How To Accordion _button__files/___vscode_livepreview_injected_script"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./How To Accordion _button__files/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./How To Accordion _button__files/style.css">
+    <title>How To Accordion &lt;button&gt;&lt;/button&gt;</title>
+</head>
+<body>
+<button class="accordion">Section 1</button>
+<div class="panel">
+    <img src="./How To Accordion _button__files/OIP (4).jpeg">
+    <p>Lorem ipsum dolor sit amet..</p>
+</div>
+<button class="accordion">Section 2</button>
+<div class="panel">
+    <h1 class="content">About us!</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id voluptatem eaque, rem tempora iste nisi fugit inventore at, veniam a, reiciendis minima optio similique fuga consequatur vel officia! Accusamus rem recusandae quis reprehenderit ea cupiditate maxime cumque ipsa perspiciatis ipsum doloremque hic, quasi saepe illo aut modi omnis quisquam. Pariatur maiores incidunt, similique facilis doloremque iure commodi maxime vero dolores assumenda eaque voluptate omnis veritatis ipsum in asperiores, aliquam earum adipisci quisquam, repudiandae tempore blanditiis! Amet maiores ullam repudiandae perferendis quas provident ut dolore distinctio, suscipit odio? Nam quisquam voluptatibus delectus dignissimos consequatur magnam? Sequi, quidem porro aspernatur et aliquid laudantium reprehenderit modi. Corporis hic quidem debitis, maiores perferendis eaque animi?</p>
+    <p>Lorem, ipsum dolor...</p>
+</div>
+<button class="accordion">Section 3</button>
+<div class="panel">
+    <h1 class="content">Johan Doe</h1>
+
+    <img class="image" src="./How To Accordion _button__files/OIP (5).jpeg">
+
+    <p>Ldolor sit amet consectetur adipisicing...</p>
+    <p>Hi i 'am Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+    <p>In this accordion to create image and text also create hover effect dolor sit amet consectetur adipisicing...</p>
+</div>
+
+<!-- <p>Click on the menu icon to transform it to "X":</p>
+<div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+</div>   
+<br>
+<div class="container1" onmouseenter="myFunction(this)">
+    <div class="bar4"></div>
+    <div class="bar5"></div>
+    <div class="bar6"></div>
+</div>  -->
+<script>
+    // function myFunction(x){
+    //     x.classList.toggle("change");
+    // }
+
+    // function myFunction(x){
+    //     x.classList.toggle("change1");
+    // }
+
+// accordion pro
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++){
+    acc[i].addEventListener("click",function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block"){
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+
+<iframe id="phedra-x-popup" allow="clipboard-write;" data-state="closed" src="./How To Accordion _button__files/index.html" style="position: fixed; top: 12px; right: 12px; width: 450px; height: 672px; border: none; transform: translateX(calc(100% + 20px)); z-index: 2147483647; transition: transform 0.3s; overflow: hidden;"></iframe></body></html>

@@ -1,0 +1,282 @@
+body{
+    background:#e7e7e7;
+}
+/* Style the button that are used to open and close the accordion panel */
+.accordion {
+    background: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+.active, .accordion:hover{
+    background: #ccc;
+}
+.panel {
+    padding: 0 18px;
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+}
+p{
+    background: #000;
+    color: #Fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    text-decoration: none;
+    justify-content: center;
+
+}
+audio{
+    width: 100%;
+    display: none;
+}
+video{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.text{
+    text-align: center;
+}
+.image img:hover{
+    opacity: 0;
+    text-shadow: 1px 2px 4px rgba(red, green, blue, alpha);
+}
+p:hover {
+    background: #fff;
+    color: #000;
+}
+.content {
+    color: rgb(24, 192, 192);
+    font-size: 1.5rem;
+}
+img{
+    width: 100%;
+    border-radius: 11px;
+}
+/* forms styling */
+form{
+    margin: 10px;
+}
+.w3-navbar{
+    background: #5a5656;
+    color: #fff;
+}
+ul li {
+    list-style: none;
+    display: inline;
+}
+li a{
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px 0;
+}
+li a:hover{
+    background: #000;
+}
+input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    
+    font-family: Impact, sans-serif;
+}
+#range {
+    width: 100%;
+}
+.Accordions{
+    display: block;
+}
+.container-menu{
+    display: block;
+}
+.container-menu .Accordions:hover{
+    display: block;
+
+
+}
+/* ##########  Toggle    Menu */
+ .container {
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2,.bar3{
+    width: 35px;
+    height: 5px;
+    background: #333;
+    margin: 6px 0;
+    transition: 0.42s;
+}
+.change .bar1{
+    transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+/* 2nd menu 
+.container1{
+    display: inline-block;
+    cursor: pointer;
+}
+.bar4, .bar5, .bar6{
+    width: 37px;
+    height: 6px;
+    background: #000;
+    margin: 8px;
+    transition: 0.3s;
+}
+.change1 .bar4{
+    transform: translate(0,11px) rotate(-45deg);
+}
+.change1 .bar5 {opacity: 0;}
+
+.change1 .bar6 {
+    transform: translate(0,-11px) rotate(45deg);
+} */
+/* .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} */
+
+
+
+
+
+#atr-p{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.left-f{
+    float: left;
+    padding: 10px;
+    margin: auto;
+}
+.right-f{
+    float: right;
+    padding: 10px;
+    margin: auto;
+}
+#foot{
+    background: #464343;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media only screen and (max-width:460px){
+     audio {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: block;
+    }
+    #viewbox svg{
+        margin-left: 10px;
+       margin-top: 0% auto;
+       padding: auto;
+        font-size: 8px;
+        color: #034f16;
+    }
+    .Accordions{
+        display: grid;
+    }
+  ul li {
+    justify-content: center;
+    text-align: center;
+    background: #034f16;
+        display: block;
+        padding: 10px;
+        margin: 8px;
+    }   
+}
+
+
+
+
+/* *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: century gothic;
+} 
+.navbar-default{
+    background-color: transparent;
+    border-color: transparent;
+}
+.banner-text{
+    padding-top: 35%;
+}
+.navbar-default .navbar-nav > li > a{
+    color: #191a20;
+    font-size: 1rem;
+}
+.navbar-default .bmavbar-brand{
+    color: #191a20;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+} */

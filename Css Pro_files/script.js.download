@@ -1,0 +1,57 @@
+ function showPage(pageId) {
+    // Hide all pages
+    let pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.style.display = "none");
+
+    // Show the selected page
+    document.getElementById(pageId).style.display = 'block';
+}
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+} 
+
+// slide sow images
+
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlide(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n){
+  showSlides(slideIndex = n);
+}
+function showSlides(n){
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideindex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++){
+    slides[i].style.display = 'none';
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className.replace(" active ", "");
+  } 
+  slides[slideIndex-1].style.display = 'block';
+  dots[slideIndex-1].className += " active ";
+
+}
+// mobile
+function openSidebar() {
+  document.getElementById("mySidebar").style.display = 'block';
+}
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = 'none';
+}

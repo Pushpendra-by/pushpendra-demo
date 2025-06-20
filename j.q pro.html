@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://127.0.0.1:3000/all%20html%20files/nav.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./j.q pro_files/___vscode_livepreview_injected_script"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./j.q pro_files/w3.css">
+    <link rel="stylesheet" href="./j.q pro_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./j.q pro_files/font-awesome.min.css">
+    <script src="./j.q pro_files/jquery.min.js.download"></script>
+    <link rel="stylesheet" href="./j.q pro_files/style.css">
+    <title>j.q pro</title>
+    <style>
+        .first{background:'red';}
+        .second{background:'green';}
+    </style>
+</head>
+<body>
+    <h1 class="w3-right" style="background: red; border-radius: 20px; text-align: center; color: white; padding: 10px; float: left; border: 3px dashed black;">J.Query Projcts</h1>
+<div id="box" class="first">
+    <p class="w3-center"><i>Hellow world!</i></p>
+</div>
+
+    <div class="box" style="background: green; border-radius: 20px; text-align: center; color: white; padding: 10px; float: right;">
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, ex sequi!</p>
+    </div>
+    <button id="stylebutton" class="w3-dark-gray w3-btn w3-card-4 w3-padding w3-animate-zoom w3-margin w3-round-xxlarge w3-hover-blue">add style</button>
+    <button id="addclass" class="w3-block w3-btn w3-card-4 w3-animate-bottom w3-padding w3-margin w3-round-xxlarge w3-hover-blue">add class</button>
+    <button id="toggleclass" class="w3-gray w3-animate-top w3-btn w3-card-4 w3-padding w3-margin w3-round-xxlarge w3-hover-blue">toggle class</button>
+    <button id="removeclass" class="w3-border w3-btn  w3-block  w3-animate-top w3-card-4 w3-padding w3-margin w3-round-xxlarge w3-hover-blue">remove class</button>
+    <!-- <button id="removeClass" class="w3-gray w3-xxlarge w3-btn w3-card-4 w3-padding w3-margin w3-round-xxlarge w3-hover-blue">remove class</button> -->
+    
+<script src="./j.q pro_files/jquery.js.download"></script>
+<script>
+    // add class
+$('#addclass').click(function(){
+    $('#box').addClass('first');
+});
+// remove class
+$('#removeclass').click(function(){
+    $('#box').removeClass('first');
+})
+//   toggle class
+$('#toggleclass').dblclick(function(){
+    $('#box').toggleClass('second');
+});
+
+// add style 2nd box
+        $(document).ready(function(){
+            $('#stylebutton').click(function(){
+                // $('.box,h1').css('background','teal')
+//    for mutiple class and stye by qurly bracket 
+       $('.box').css({"background":"green",'border-radius':'20px','text-align':'center','color':'white','padding':'10px','float':'right'});   
+       $('h1').css({"background":"red",'border-radius':'20px','text-align':'center','color':'white','padding':'10px','float':'left','border':'3px dashed black'});
+
+                });
+
+        });
+    </script>
+
+<iframe id="phedra-x-popup" allow="clipboard-write;" data-state="closed" src="./j.q pro_files/index.html" style="position: fixed; top: 12px; right: 12px; width: 450px; height: 672px; border: none; transform: translateX(calc(100% + 20px)); z-index: 2147483647; transition: transform 0.3s; overflow: hidden;"></iframe></body></html>
